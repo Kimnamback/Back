@@ -4,7 +4,7 @@ const API_KEY = "9fd806541c7631f8548ce8106fa660ef";
 function onGeoOk(position) {
     const lat = position.coords.latitude ;
     const lon = position.coords.longitude ;
-    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     fetch(url)
     .then((response) => response.json())
     .then((data) => {
